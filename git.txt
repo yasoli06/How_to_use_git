@@ -1,0 +1,64 @@
+PRIMERO HEMOS DE CONFIGURAR NUETRO MAIL Y USUARIO
+
+CONFIGURAR USUARIO Y EMAIL
+    git config --global user.email "tu@email.com"
+    git config --global user.name "Tu Nombre"
+
+PARA SABER EN QUE RAMA ESTAMOS (la que sale con asterisco es en la que estamos)
+    git branch
+
+CREAR UNA RAMA:
+    git branch el_nombre_de_la_rama
+
+CAMBIAR EL NOMBRE DE LA RAMA
+    git branch -m el_nombre_de_la_rama el_nuevo_nombre_de_la_rama
+
+BORRAR RAMA (no se puede borrar estando en la rama que queremos borrar)
+    git branch -d el_nombre_de_la_rama
+
+CAMBIAR DE UNA RAMA A OTRA
+    git checkout la_rama_a_la_que_queremos_ir
+
+ACTUALIZAR EL REPOSITORIO CON COSAS TRABAJADAS DESDE OTRO SITIO
+    git pull origin el_nombre_de_la_rama_que_queremos_actualizar
+
+SI CREAS UNA BRANCA LOCAL Y LA QUIERES "SUBIR" AL REPOSITORIO 
+    git push --set-upstream origin el_nombre_de_la_rama
+
+FUSIONAR RAMAS desde la rama actual le sumas la otra rama
+    git merge rama_a_fusionar_con_la_actual
+
+    SI ENCUENTRA CONFLICTO (se han modificado las mismas lineas del `archivo`)
+    Se ha de resolver manualmente, Visual ya te dice de queien es cada parte.
+    Después de resolver los conflictos, guardas los cambios de `archivo` y ejecutas git add `archivo` para marcar el archivo como resuelto. 
+    Luego, puedes continuar con el merge ejecutando 
+        git merge --continue
+
+
+
+LO QUE DICE MI AMIGO GPT
+Aquí tienes algunos de los comandos de Git más utilizados:
+
+1. **git init**: Inicializa un nuevo repositorio Git en el directorio actual.
+
+2. **git clone [URL]**: Clona un repositorio Git remoto en tu máquina local.
+
+3. **git add [archivo]**: Agrega un archivo al área de preparación (staging area) para ser incluido en el próximo commit.
+
+4. **git commit -m "[mensaje]"**: Crea un nuevo commit con los cambios en el área de preparación, acompañado de un mensaje descriptivo.
+
+5. **git status**: Muestra el estado actual del repositorio, incluyendo archivos modificados, añadidos y eliminados.
+
+6. **git diff**: Muestra las diferencias entre el directorio de trabajo y el área de preparación.
+
+7. **git log**: Muestra el historial de commits del repositorio.
+
+8. **git branch**: Lista las ramas presentes en el repositorio.
+
+9. **git checkout [rama|archivo]**: Cambia al commit más reciente de la rama especificada, o restaura un archivo a su estado en el commit más reciente.
+
+10. **git merge [rama]**: Fusiona los cambios de otra rama en la rama actual.
+
+11. **git pull**: Obtiene y fusiona los cambios desde un repositorio remoto en la rama actual.
+
+12. **git push**: Envía los commits locales al repositorio remoto.
